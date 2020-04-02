@@ -1,0 +1,66 @@
+body {
+  font-size: 10px;
+  color: #767676;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #767676;
+}
+
+a:link {
+  color: #767676;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photoBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.photo > a > img {
+  width: 500px;
+}
+
+/*----------- mobile ------------*/
+@media screen and (max-width: 1120px) {
+  .photo {
+    margin: 10px;
+  }
+
+  .photo > img {
+    width: 300px;
+  }
+}
+
+/*----------- tablet ------------*/
+@media screen and (min-width: 1120px) and (max-width: 1680px) {
+  .photo {
+    margin: 20px;
+  }
+
+  .photo > img {
+    width: 400px;
+  }
+}
