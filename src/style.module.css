@@ -25,6 +25,7 @@ img {
 .photos {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .photoBlock {
@@ -43,24 +44,24 @@ img {
   width: 500px;
 }
 
-/*----------- mobile ------------*/
-@media screen and (max-width: 1120px) {
+/*----------- tablet ------------*/
+@media screen and (min-width: 1120px) and (max-width: 1680px) {
   .photo {
-    margin: 10px;
+    margin: 25px;
   }
 
-  .photo > img {
-    width: 300px;
+  .photo > a > img {
+    width: 400px;
   }
 }
 
-/*----------- tablet ------------*/
-@media screen and (min-width: 1120px) and (max-width: 1680px) {
+/*----------- mobile ------------*/
+@media screen and (max-width: 1120px) {
   .photo {
     margin: 20px;
   }
 
-  .photo > img {
-    width: 400px;
+  .photo > a > img {
+    width: 300px;
   }
 }
