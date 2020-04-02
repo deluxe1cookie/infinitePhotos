@@ -8,7 +8,7 @@ import Loader from './components/Loader';
 import ending from './sticker.webp';
 
 function App() {
-    const accessKey = process.env.ACCESS_KEY;
+    const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
     let [photos, setPhotos] = useState([]);
     let [page, setPage] = useState(1);
